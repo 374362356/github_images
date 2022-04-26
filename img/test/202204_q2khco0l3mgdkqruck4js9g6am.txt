@@ -1,0 +1,1000 @@
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:673)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:591)
+	at java.lang.Thread.run(Thread.java:745)
+2022-04-20 16:07:25,717 [qtp1199742317-1115] INFO  [com.zhongan.flow.api.log.AroundLogger] - end public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.notifyProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):FlowResult [code=0, message=null, result=HaUwPolicy(id=1110002, uwSourceType=2, uwStatus=9, policySource=13, objectId=7008, objectNo=8P11010522130001282675|2P11010522130001141032, policyNo=8P11010522130001282675, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:07:23 GMT+08:00 2022, uwFinishTime=Wed Apr 20 16:07:24 GMT+08:00 2022, endorseType=2, remark=null, uwEscaUser=null, uwDecision=1, uwLevel=null, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=马上6, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9698c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo=null, isDeleted=null, uwReturnReasonType=null, channelCode=null), resultType=class com.zhongan.open.minos.share.domain.HaUwPolicy]
+2022-04-20 16:16:15,939 [qtp1199742317-1112] INFO  [com.zhongan.flow.api.log.AroundLogger] - begin public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String):[1101050000001, IHYGEIA_EDT, 8P11010522130001282676|2P11010522130001141033, {"endorsementType":"4","policyEndorReqDTO":{"applicationMethodEnum":"CustomerForward","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorReasonEnum":"CustomerApp","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false},"type":"normal"}]
+2022-04-20 16:16:15,956 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ProcessInstance[261f4ecf-c082-11ec-bc67-a674be068772]
+2022-04-20 16:16:15,957 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"endorsementType":"4","policyEndorReqDTO":{"applicationMethodEnum":"CustomerForward","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorReasonEnum":"CustomerApp","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false},"type":"normal"}
+2022-04-20 16:16:15,958 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is IhygStartFlow(policyEndorReqDTO=PolicyEndorReqDTO(endorId=null, policyNo=8P11010522130001282676, endorNo=2P11010522130001141033, policyId=null, endorsementTypeEnum=CUSTOMER_MODIFY_BASICINFO, channelOrderNo=null, creator=null, reviewer=null, underwriter=null, reviewComments=null, underwriteComments=null, reviewTime=null, underwriteTime=null, operator=陈思思, operatorId=1101050000001, bpmOperatorId=null, attachmentDTOS=null, applicantName=null, applicantCertiType=null, applicantCertiNo=null, applicantPhone=null, channelSystemCode=null, applicationTime=null, applicationMethodEnum=CustomerForward, endorsementStatusEnum=null, validationTime=null, hasCommission=null, fullSurrender=null, endorReasonEnum=CustomerApp, SurrenderReasonEnum=null, haIPolicyPayeeDTO=null, surrenderReason=null, remark=null, fromWorkFlow=false, mobile=null, terminationCause=null, terminationComments=null, haICsChangeBasicInfoDTOBefore=null, haICsChangeBasicInfoDTOAfter=null, currentStep=null, surrenderSecondReason=null, batchPolicyType=null, generalPremiumCalculation=false, changePremium=null, haICsCustomerTempDTO=null, paymentTradeNo=null, endorsementInsureds=null, surrenderPremiumTotal=null, formulaText=null, staffOperation=false, extraSpContentBefore=null, extraSpContentAfter=null, standardContent=null, finalContent=null, rollbackNo=null, effectAfterPaid=NO, newPaymentDateTime=null, rollbackEndorsementType=null, isUseChangeItem=null, userChangedItem=null, holderChangedItems=null, endorsementOperation=null, paymentOrderNo=null, underwriteReturnReason=null, extraInfo=null, inheritOrNot=null, isNoRefund=null, hasClaimGreaterThan0=null, createTime=null, endorsementCode=null, endorSeqNo=null, phasePaidInAdvanceSurrender=null, endorsementPaymentInfos=null, refundAmt=null, handingFee=null, businessOrgCode=null, campaignName=null, planCode=null, planName=null, newPlanCode=null, argueSolution=null, arbitrationInstitution=null, jurisdiction=null, businessNo=null, systemCode=null, highwayHisInfoList=null, isEffectAfter=null, premium=null), policyBatchEndorReqDTO=null, type=normal, endorsementType=4)
+2022-04-20 16:16:15,958 [qtp1199742317-1112] INFO  [com.zhongan.health.flow.ihygeia.edt.listener.IhygStartFlowListener] - ==IhygStartFlowListener==入参{"endorsementType":"4","policyEndorReqDTO":{"applicationMethodEnum":"CustomerForward","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorReasonEnum":"CustomerApp","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false},"type":"normal"}
+2022-04-20 16:16:16,105 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"result":"2P11010522130001141033","code":"0"}
+2022-04-20 16:16:16,106 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: null
+2022-04-20 16:16:16,106 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: BaseResult [code=0, message=null, result=2P11010522130001141033]
+2022-04-20 16:16:16,107 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"result":"2P11010522130001141033","code":"0"}
+2022-04-20 16:16:16,108 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {USR_type=normal, USR_policyNo=8P11010522130001282676, USR_creator=陈思思, USR_endorsementType=4} in task ProcessInstance[261f4ecf-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:16:16,108 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+} in execution 261f4ecf-c082-11ec-bc67-a674be068772 
+2022-04-20 16:16:16,123 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - task: 2638ca51-c082-11ec-bc67-a674be068772, should recover assignee? true
+2022-04-20 16:16:16,124 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - try to the historic assignee of the task key TSK_DRAFT of instanceId 261f4ecf-c082-11ec-bc67-a674be068772 :
+2022-04-20 16:16:16,135 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - no historic assingee is found
+2022-04-20 16:16:16,135 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - try to count the historic task key TSK_DRAFT of instanceId 261f4ecf-c082-11ec-bc67-a674be068772 :
+2022-04-20 16:16:16,141 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - the historic task count is 0
+2022-04-20 16:16:16,141 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - set user 1101050000001 as assignee for task Task[2638ca51-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:16:16,147 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - bizInput is not in flow context, so read it from variable scope
+2022-04-20 16:16:16,147 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizJSON is {"endorsementType":"4","policyEndorReqDTO":{"applicationMethodEnum":"CustomerForward","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorReasonEnum":"CustomerApp","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false},"type":"normal"}
+2022-04-20 16:16:16,147 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizInput object is null
+2022-04-20 16:16:16,148 [qtp1199742317-1112] INFO  [com.zhongan.health.flow.ihygeia.edt.listener.IhygClaimTaskListener] - operator:1101050000001,businessKey:8P11010522130001282676|2P11010522130001141033,taskDefKey:TSK_DRAFT,assignee:1101050000001
+2022-04-20 16:16:16,174 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: BaseResult [code=0, message=null, result=2P11010522130001141033]
+2022-04-20 16:16:16,175 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: BaseResult [code=0, message=null, result=2P11010522130001141033]
+2022-04-20 16:16:16,175 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizOutput is true
+2022-04-20 16:16:16,176 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - Set flow variables {} in task Task[2638ca51-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:16:16,176 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - Set business variables {} in task Task[2638ca51-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:16:16,369 [qtp1199742317-1112] INFO  [com.zhongan.flow.api.cron.ProcessUpdateSpendingService] - update: 
+2022-04-20 16:16:16,404 [qtp1199742317-1112] INFO  [com.zhongan.flow.api.cron.ProcessUpdateSpendingService] - suspends after sort: []
+2022-04-20 16:16:16,457 [qtp1199742317-1112] INFO  [com.zhongan.flow.api.log.AroundLogger] - end public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String):FlowResult [code=0, message=null, result=BaseResult [code=0, message=null, result=2P11010522130001141033], resultType=class com.zhongan.health.common.share.bean.BaseResult]
+2022-04-20 16:17:22,471 [qtp1199742317-1112] INFO  [com.zhongan.flow.api.log.AroundLogger] - begin public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.completeTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):[1101050000001, IHYGEIA_EDT, 8P11010522130001282676|2P11010522130001141033, TSK_DRAFT, {"draftCancel":false,"policyEndorReqDTO":{"businessOrgCode":"1101050000","currentStep":"3","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}]
+2022-04-20 16:17:22,531 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ProcessInstance[261f4ecf-c082-11ec-bc67-a674be068772]
+2022-04-20 16:17:22,532 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"draftCancel":false,"policyEndorReqDTO":{"businessOrgCode":"1101050000","currentStep":"3","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:17:22,532 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is IhygDraft(draftCancel=false, autoReviewPass=false, policyEndorReqDTO=PolicyEndorReqDTO(endorId=null, policyNo=8P11010522130001282676, endorNo=2P11010522130001141033, policyId=null, endorsementTypeEnum=CUSTOMER_MODIFY_BASICINFO, channelOrderNo=null, creator=null, reviewer=null, underwriter=null, reviewComments=null, underwriteComments=null, reviewTime=null, underwriteTime=null, operator=陈思思, operatorId=1101050000001, bpmOperatorId=null, attachmentDTOS=null, applicantName=null, applicantCertiType=null, applicantCertiNo=null, applicantPhone=null, channelSystemCode=null, applicationTime=null, applicationMethodEnum=null, endorsementStatusEnum=PENDINGREVIEW, validationTime=null, hasCommission=null, fullSurrender=null, endorReasonEnum=null, SurrenderReasonEnum=null, haIPolicyPayeeDTO=null, surrenderReason=null, remark=null, fromWorkFlow=false, mobile=null, terminationCause=null, terminationComments=null, haICsChangeBasicInfoDTOBefore=null, haICsChangeBasicInfoDTOAfter=null, currentStep=3, surrenderSecondReason=null, batchPolicyType=null, generalPremiumCalculation=false, changePremium=null, haICsCustomerTempDTO=null, paymentTradeNo=null, endorsementInsureds=null, surrenderPremiumTotal=null, formulaText=null, staffOperation=false, extraSpContentBefore=null, extraSpContentAfter=null, standardContent=null, finalContent=null, rollbackNo=null, effectAfterPaid=NO, newPaymentDateTime=null, rollbackEndorsementType=null, isUseChangeItem=null, userChangedItem=null, holderChangedItems=null, endorsementOperation=null, paymentOrderNo=null, underwriteReturnReason=null, extraInfo=null, inheritOrNot=null, isNoRefund=null, hasClaimGreaterThan0=null, createTime=null, endorsementCode=null, endorSeqNo=null, phasePaidInAdvanceSurrender=null, endorsementPaymentInfos=null, refundAmt=null, handingFee=null, businessOrgCode=1101050000, campaignName=null, planCode=null, planName=null, newPlanCode=null, argueSolution=null, arbitrationInstitution=null, jurisdiction=null, businessNo=null, systemCode=null, highwayHisInfoList=null, isEffectAfter=null, premium=null), policyBatchEndorReqDTO=null)
+2022-04-20 16:17:22,533 [qtp1199742317-1112] INFO  [com.zhongan.health.flow.ihygeia.edt.listener.IhygDraftListener] - ==IhygDraftListener==入参{"autoReviewPass":false,"draftCancel":false,"policyEndorReqDTO":{"businessOrgCode":"1101050000","currentStep":"3","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:17:22,716 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"result":"2P11010522130001141033","code":"0"}
+2022-04-20 16:17:22,717 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: null
+2022-04-20 16:17:22,717 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: BaseResult [code=0, message=null, result=2P11010522130001141033]
+2022-04-20 16:17:22,723 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"result":"2P11010522130001141033","code":"0"}
+2022-04-20 16:17:22,724 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {} in task ProcessInstance[261f4ecf-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:17:22,724 [qtp1199742317-1112] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+  draftCancel => Untyped value 'false'
+} in execution 261f4ecf-c082-11ec-bc67-a674be068772 
+2022-04-20 16:17:22,947 [qtp1199742317-1112] INFO  [com.zhongan.flow.api.log.AroundLogger] - end public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.completeTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):FlowResult [code=0, message=null, result=BaseResult [code=0, message=null, result=2P11010522130001141033], resultType=class com.zhongan.health.common.share.bean.BaseResult]
+2022-04-20 16:17:23,038 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - 'BIZ_INPUT' is {"draftCancel":false,"policyEndorReqDTO":{"businessOrgCode":"1101050000","currentStep":"3","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:17:23,038 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - 'BIZ_INPUT' object is IhygDraft(draftCancel=false, autoReviewPass=false, policyEndorReqDTO=PolicyEndorReqDTO(endorId=null, policyNo=8P11010522130001282676, endorNo=2P11010522130001141033, policyId=null, endorsementTypeEnum=CUSTOMER_MODIFY_BASICINFO, channelOrderNo=null, creator=null, reviewer=null, underwriter=null, reviewComments=null, underwriteComments=null, reviewTime=null, underwriteTime=null, operator=陈思思, operatorId=1101050000001, bpmOperatorId=null, attachmentDTOS=null, applicantName=null, applicantCertiType=null, applicantCertiNo=null, applicantPhone=null, channelSystemCode=null, applicationTime=null, applicationMethodEnum=null, endorsementStatusEnum=PENDINGREVIEW, validationTime=null, hasCommission=null, fullSurrender=null, endorReasonEnum=null, SurrenderReasonEnum=null, haIPolicyPayeeDTO=null, surrenderReason=null, remark=null, fromWorkFlow=false, mobile=null, terminationCause=null, terminationComments=null, haICsChangeBasicInfoDTOBefore=null, haICsChangeBasicInfoDTOAfter=null, currentStep=3, surrenderSecondReason=null, batchPolicyType=null, generalPremiumCalculation=false, changePremium=null, haICsCustomerTempDTO=null, paymentTradeNo=null, endorsementInsureds=null, surrenderPremiumTotal=null, formulaText=null, staffOperation=false, extraSpContentBefore=null, extraSpContentAfter=null, standardContent=null, finalContent=null, rollbackNo=null, effectAfterPaid=NO, newPaymentDateTime=null, rollbackEndorsementType=null, isUseChangeItem=null, userChangedItem=null, holderChangedItems=null, endorsementOperation=null, paymentOrderNo=null, underwriteReturnReason=null, extraInfo=null, inheritOrNot=null, isNoRefund=null, hasClaimGreaterThan0=null, createTime=null, endorsementCode=null, endorSeqNo=null, phasePaidInAdvanceSurrender=null, endorsementPaymentInfos=null, refundAmt=null, handingFee=null, businessOrgCode=1101050000, campaignName=null, planCode=null, planName=null, newPlanCode=null, argueSolution=null, arbitrationInstitution=null, jurisdiction=null, businessNo=null, systemCode=null, highwayHisInfoList=null, isEffectAfter=null, premium=null), policyBatchEndorReqDTO=null)
+2022-04-20 16:17:23,039 [pool-1-thread-3] INFO  [com.zhongan.health.flow.ihygeia.edt.delegate.AutoReviewDelegateExpression] - ==AutoReviewDelegateExpression invokeBizLogic==params:{"autoReviewPass":false,"draftCancel":false,"policyEndorReqDTO":{"businessOrgCode":"1101050000","currentStep":"3","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:17:23,099 [pool-1-thread-3] INFO  [com.zhongan.health.flow.ihygeia.edt.delegate.AutoReviewDelegateExpression] - ==call IH autoReview fail,params:{"autoReviewPass":false,"draftCancel":false,"policyEndorReqDTO":{"businessOrgCode":"1101050000","currentStep":"3","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}},result:{"code":"0","result":true}
+2022-04-20 16:17:23,100 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Return value of invokeBizLogic is {"result":{"autoReviewPass":true,"draftCancel":false,"policyEndorReqDTO":{"businessOrgCode":"1101050000","policyNo":"8P11010522130001282676","operator":"陈思思","effectAfterPaid":"NO","operatorId":"1101050000001","fromWorkFlow":false,"generalPremiumCalculation":false,"currentStep":"3","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","staffOperation":false,"endorNo":"2P11010522130001141033","endorsementStatusEnum":"PENDINGREVIEW"}},"code":"0"}
+2022-04-20 16:17:23,102 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Set business variables {} in task ProcessInstance[261f4ecf-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:17:23,102 [pool-1-thread-3] INFO  [com.zhongan.health.flow.ihygeia.edt.delegate.AutoReviewDelegateExpression] - ==AutoReviewDelegateExpression createFlowVariables==params:{"autoReviewPass":true,"draftCancel":false,"policyEndorReqDTO":{"businessOrgCode":"1101050000","currentStep":"3","effectAfterPaid":"NO","endorNo":"2P11010522130001141033","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"CUSTOMER_MODIFY_BASICINFO","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:17:23,209 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Set flow variables {
+  autoReviewPass => Untyped value 'true'
+  uwInput => Untyped value '{"applyDate":"2022-03-02 15:41:21","bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","deny":false,"endorseName":"陈思思","endorseType":4,"holderId":545008,"holderName":"马上6","isNeedReinsurance":"N","man":false,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"1101050000001","operatorName":"陈思思","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"shouldFailAtAutoUW":false,"systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"validateTime":"2022-04-21 00:00:00"}'
+  reviewReject => Untyped value 'false'
+  reviewCancel => Untyped value 'false'
+} in execution ProcessInstance[261f4ecf-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:17:23,244 [pool-1-thread-3] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ProcessInstance[4e3a7c73-c082-11ec-bc67-a674be068772]
+2022-04-20 16:17:23,244 [pool-1-thread-3] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - bizInput is not in flow context, so read it from variable scope
+2022-04-20 16:17:23,245 [pool-1-thread-3] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"applyDate":"2022-03-02 15:41:21","bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","deny":false,"endorseName":"陈思思","endorseType":4,"holderId":545008,"holderName":"马上6","isNeedReinsurance":"N","man":false,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"1101050000001","operatorName":"陈思思","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"shouldFailAtAutoUW":false,"systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"validateTime":"2022-04-21 00:00:00"}
+2022-04-20 16:17:23,245 [pool-1-thread-3] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is MinosStartFlow(man=false, reject=false, deny=false, shouldFailAtAutoUW=false, uwSourceType=2, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141033, policyNo=8P11010522130001282676, applyDate=2022-03-02 15:41:21, systemSource=IHYGEIA, policySource=13, validateTime=2022-04-21 00:00:00, endorseType=4, endorseName=陈思思, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, isNeedReinsurance=N, holderId=545008, holderName=马上6, holderCertType=null, holderCertNo=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=1101050000001, operatorName=陈思思, businessOrgCode=1101050000)
+2022-04-20 16:17:23,245 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - MinosStartFlow:{"applyDate":"2022-03-02 15:41:21","bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","deny":false,"endorseName":"陈思思","endorseType":4,"holderId":545008,"holderName":"马上6","isNeedReinsurance":"N","man":false,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"1101050000001","operatorName":"陈思思","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"shouldFailAtAutoUW":false,"systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"validateTime":"2022-04-21 00:00:00"}
+2022-04-20 16:17:23,246 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - haUwPolicy:{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","endorseName":"陈思思","endorseType":4,"holderId":545008,"holderName":"马上6","isNeedReinsurance":"N","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"1101050000001","operatorName":"陈思思","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"validateTime":1650470400000}
+2022-04-20 16:17:23,554 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - 创建核保任务成功
+2022-04-20 16:17:23,554 [pool-1-thread-3] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"result":1115001,"code":"0"}
+2022-04-20 16:17:23,555 [pool-1-thread-3] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: BaseResult [code=0, message=null, result=1095001]
+2022-04-20 16:17:23,555 [pool-1-thread-3] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: BaseResult [code=0, message=null, result=1095001]
+2022-04-20 16:17:23,555 [pool-1-thread-3] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"result":1115001,"code":"0"}
+2022-04-20 16:17:23,555 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - bizOutput:BaseResult [code=0, message=null, result=1115001]
+2022-04-20 16:17:23,556 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - success:true
+2022-04-20 16:17:23,556 [pool-1-thread-3] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {} in task ProcessInstance[4e3a7c73-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:17:23,556 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - in:{"manualUW":false,"uwId":1115001}
+2022-04-20 16:17:23,556 [pool-1-thread-3] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+  autoUWInput => Untyped value '{"manualUW":false,"uwId":1115001}'
+} in execution 4e3a7c73-c082-11ec-bc67-a674be068772 
+2022-04-20 16:17:23,872 [pool-1-thread-1] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - 'autoUWInput' is {"manualUW":false,"uwId":1115001}
+2022-04-20 16:17:23,872 [pool-1-thread-1] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - 'autoUWInput' object is MinosAutoUWInput(uwId=1115001, manualUW=false)
+2022-04-20 16:17:23,873 [pool-1-thread-1] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - ----minosAutoUWDelegate flow start-----
+2022-04-20 16:17:23,873 [pool-1-thread-1] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - MinosAutoUWInput:{"manualUW":false,"uwId":1115001}
+2022-04-20 16:17:23,926 [pool-1-thread-1] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - boom3:uwAutoUwService.excuteAutoUw start...
+2022-04-20 16:17:23,956 [pool-1-thread-1] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - boom3:uwAutoUwService.excuteAutoUw result:{"errorCode":"9999","result":{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","curAuditLevel":1,"endorseName":"陈思思","endorseType":4,"holderId":545008,"holderName":"马上6","id":1115001,"isLocked":"N","isNeedReinsurance":"N","lockedId":"N/A","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"superAuthFlag":"N","systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"uwStatus":0,"validateTime":1650442643000},"success":true}
+2022-04-20 16:17:23,957 [pool-1-thread-1] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Return value of invokeBizLogic is {"result":{"objectNo":"8P11010522130001282676|2P11010522130001141033","businessOrgCode":"1101050000","channelCategory":"300","policyNo":"8P11010522130001282676","secondPartnerFullName":"中元经纪公司","endorseType":4,"secondPartnerId":5,"superAuthFlag":"N","lockedId":"N/A","systemSource":"IHYGEIA","uwStatus":0,"isLocked":"N","id":1115001,"curAuditLevel":1,"objectId":7009,"bdSalesmanName":"金庆玲","holderName":"马上6","endorseName":"陈思思","uwSourceType":2,"policySource":"13","holderId":545008,"uwPolicyCategory":"2","validateTime":1650442643000,"channelTradeNo":"635a7bb608500505be9699c38231a617-1","applyDate":1646206881000,"isNeedReinsurance":"N","bdSalesmanId":1101050000003},"code":"0"}
+2022-04-20 16:17:23,957 [pool-1-thread-1] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - minosAutoUWDelegate bizOutput{"code":"0","result":{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","curAuditLevel":1,"endorseName":"陈思思","endorseType":4,"holderId":545008,"holderName":"马上6","id":1115001,"isLocked":"N","isNeedReinsurance":"N","lockedId":"N/A","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"superAuthFlag":"N","systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"uwStatus":0,"validateTime":1650442643000}}
+2022-04-20 16:17:23,957 [pool-1-thread-1] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Set business variables {} in task ProcessInstance[4e3a7c73-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:17:23,958 [pool-1-thread-1] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - minosAutoUWDelegate variables bizOutput
+2022-04-20 16:17:23,958 [pool-1-thread-1] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - minosAutoUWDelegate uwResult:{"deny":false,"endorseName":"陈思思","holderId":545008,"id":1115001,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"shouldFailUWA":false,"uwSourceType":2,"uwStatus":0,"validateTime":"2022-04-20 16:17:23"}
+2022-04-20 16:17:23,963 [pool-1-thread-1] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Set flow variables {
+  autoUWInput => Untyped value '{"manualUW":false,"uwId":1115001}'
+  manualUW => Untyped value 'false'
+} in execution ProcessInstance[4e3a7c73-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:17:24,530 [qtp1199742317-1125] INFO  [com.zhongan.flow.api.log.AroundLogger] - begin public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.notifyProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):[SYSTEM, MSG_AUTO_UW_MINOS, MINOS, 8P11010522130001282676|2P11010522130001141033, {"manualUW":false,"uwId":1115001}]
+2022-04-20 16:17:24,577 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ScopeExecution[4eaaca82-c082-11ec-bc67-a674be068772]
+2022-04-20 16:17:24,578 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"manualUW":false,"uwId":1115001}
+2022-04-20 16:17:24,578 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is MinosAutoUWInput(uwId=1115001, manualUW=false)
+2022-04-20 16:17:24,579 [qtp1199742317-1125] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - ----minosAutoUWListener flow start-----
+2022-04-20 16:17:24,579 [qtp1199742317-1125] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - MinosAutoUWInput:{"manualUW":false,"uwId":1115001}
+2022-04-20 16:17:24,607 [qtp1199742317-1125] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - 查询核保任务baseResult：{"errorCode":"9000","result":{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","curAuditLevel":1,"endorseName":"陈思思","endorseType":4,"holderId":545008,"holderName":"马上6","id":1115001,"isLocked":"N","isNeedReinsurance":"N","lockedId":"N/A","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"N/A","operatorName":"N/A","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"superAuthFlag":"N","systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"uwStatus":9,"validateTime":1650442643000},"success":true}
+2022-04-20 16:17:24,608 [qtp1199742317-1125] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - 是否触发自核 false
+2022-04-20 16:17:24,663 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"objectNo":"8P11010522130001282676|2P11010522130001141033","businessOrgCode":"1101050000","channelCategory":"300","policyNo":"8P11010522130001282676","secondPartnerFullName":"中元经纪公司","endorseType":4,"secondPartnerId":5,"operatorName":"N/A","superAuthFlag":"N","lockedId":"N/A","systemSource":"IHYGEIA","uwStatus":9,"isLocked":"N","id":1115001,"curAuditLevel":1,"operatorId":"N/A","objectId":7009,"bdSalesmanName":"金庆玲","holderName":"马上6","endorseName":"陈思思","uwSourceType":2,"policySource":"13","uwDecision":1,"holderId":545008,"uwPolicyCategory":"2","validateTime":1650442643000,"uwFinishTime":1650442645000,"channelTradeNo":"635a7bb608500505be9699c38231a617-1","applyDate":1646206881000,"isNeedReinsurance":"N","bdSalesmanId":1101050000003}
+2022-04-20 16:17:24,664 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: null
+2022-04-20 16:17:24,664 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: HaUwPolicy(id=1115001, uwSourceType=2, uwStatus=9, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141033, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:17:23 GMT+08:00 2022, uwFinishTime=Wed Apr 20 16:17:25 GMT+08:00 2022, endorseType=4, remark=null, uwEscaUser=null, uwDecision=1, uwLevel=null, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=马上6, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo=null, isDeleted=null, uwReturnReasonType=null, channelCode=null)
+2022-04-20 16:17:24,670 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"objectNo":"8P11010522130001282676|2P11010522130001141033","businessOrgCode":"1101050000","channelCategory":"300","policyNo":"8P11010522130001282676","secondPartnerFullName":"中元经纪公司","endorseType":4,"secondPartnerId":5,"operatorName":"N/A","superAuthFlag":"N","lockedId":"N/A","systemSource":"IHYGEIA","uwStatus":9,"isLocked":"N","id":1115001,"curAuditLevel":1,"operatorId":"N/A","objectId":7009,"bdSalesmanName":"金庆玲","holderName":"马上6","endorseName":"陈思思","uwSourceType":2,"policySource":"13","uwDecision":1,"holderId":545008,"uwPolicyCategory":"2","validateTime":1650442643000,"uwFinishTime":1650442645000,"channelTradeNo":"635a7bb608500505be9699c38231a617-1","applyDate":1646206881000,"isNeedReinsurance":"N","bdSalesmanId":1101050000003}
+2022-04-20 16:17:24,671 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {} in task ScopeExecution[4eaaca82-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:17:24,672 [qtp1199742317-1125] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - minosAutoUWListener uwResult input:{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","curAuditLevel":1,"endorseName":"陈思思","endorseType":4,"holderId":545008,"holderName":"马上6","id":1115001,"isLocked":"N","isNeedReinsurance":"N","lockedId":"N/A","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"N/A","operatorName":"N/A","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"superAuthFlag":"N","systemSource":"IHYGEIA","uwDecision":1,"uwFinishTime":1650442645000,"uwPolicyCategory":"2","uwSourceType":2,"uwStatus":9,"validateTime":1650442643000}
+2022-04-20 16:17:24,672 [qtp1199742317-1125] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - minosAutoUWListener uwResult:{"deny":false,"endorseName":"陈思思","holderId":545008,"id":1115001,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"SYSTEM","operatorName":"SYSTEM","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"shouldFailUWA":false,"uwDecision":1,"uwFinishTime":"2022-04-20 16:17:25","uwSourceType":2,"uwStatus":9,"validateTime":"2022-04-20 16:17:23"},manualUWfalse
+2022-04-20 16:17:24,678 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+  manualUW => Untyped value 'false'
+  uwResult => Untyped value '{"deny":false,"endorseName":"陈思思","holderId":545008,"id":1115001,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"auto pass","operatorName":"auto pass","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"remark":"核保通过","shouldFailUWA":false,"uwDecision":1,"uwFinishTime":"2022-04-20 16:17:24","uwSourceType":2,"uwStatus":9,"validateTime":"2022-04-20 16:17:23"}'
+} in execution 4eaaca82-c082-11ec-bc67-a674be068772 
+2022-04-20 16:17:24,747 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ScopeExecution[4e38f5d1-c082-11ec-bc67-a674be068772]
+2022-04-20 16:17:24,748 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - bizInput is not in flow context, so read it from variable scope
+2022-04-20 16:17:24,749 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"deny":false,"endorseName":"陈思思","holderId":545008,"id":1115001,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"auto pass","operatorName":"auto pass","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"remark":"核保通过","shouldFailUWA":false,"uwDecision":1,"uwFinishTime":"2022-04-20 16:17:24","uwSourceType":2,"uwStatus":9,"validateTime":"2022-04-20 16:17:23"}
+2022-04-20 16:17:24,749 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is MinosUWResult(id=1115001, uwStatus=9, objectId=7009, policyNo=8P11010522130001282676, uwLevel=null, holderId=545008, reject=false, deny=false, denyReason=null, shouldFailUWA=false, uwSourceType=2, policySource=13, objectNo=8P11010522130001282676|2P11010522130001141033, remark=核保通过, uwReturnReasonType=null, uwDecision=1, operatorId=auto pass, endorseName=陈思思, operatorName=auto pass, validateTime=2022-04-20 16:17:23, uwFinishTime=2022-04-20 16:17:24, terminateEnum=null, terminationComments=null)
+2022-04-20 16:17:24,750 [qtp1199742317-1125] INFO  [com.zhongan.health.flow.ihygeia.edt.listener.IhygUWListener] - ===IhygUWListener入参=={"deny":false,"endorseName":"陈思思","holderId":545008,"id":1115001,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141033","operatorId":"auto pass","operatorName":"auto pass","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"remark":"核保通过","shouldFailUWA":false,"uwDecision":1,"uwFinishTime":"2022-04-20 16:17:24","uwSourceType":2,"uwStatus":9,"validateTime":"2022-04-20 16:17:23"}
+2022-04-20 16:17:24,750 [qtp1199742317-1125] INFO  [com.zhongan.health.flow.ihygeia.edt.listener.IhygUWListener] - skip draftCancelPolicyEndorsement
+2022-04-20 16:17:25,635 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"result":"2P11010522130001141033","code":"0"}
+2022-04-20 16:17:25,636 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: HaUwPolicy(id=1115001, uwSourceType=2, uwStatus=9, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141033, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:17:23 GMT+08:00 2022, uwFinishTime=Wed Apr 20 16:17:25 GMT+08:00 2022, endorseType=4, remark=null, uwEscaUser=null, uwDecision=1, uwLevel=null, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=马上6, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo=null, isDeleted=null, uwReturnReasonType=null, channelCode=null)
+2022-04-20 16:17:25,637 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: HaUwPolicy(id=1115001, uwSourceType=2, uwStatus=9, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141033, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:17:23 GMT+08:00 2022, uwFinishTime=Wed Apr 20 16:17:25 GMT+08:00 2022, endorseType=4, remark=null, uwEscaUser=null, uwDecision=1, uwLevel=null, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=马上6, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo=null, isDeleted=null, uwReturnReasonType=null, channelCode=null)
+2022-04-20 16:17:25,643 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"result":"2P11010522130001141033","code":"0"}
+2022-04-20 16:17:25,643 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {} in task ScopeExecution[4e38f5d1-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:17:25,644 [qtp1199742317-1125] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+  uwDeny => Untyped value 'false'
+  uwReject => Untyped value 'false'
+} in execution 4e38f5d1-c082-11ec-bc67-a674be068772 
+2022-04-20 16:17:25,932 [qtp1199742317-1125] ERROR [org.camunda.bpm.engine.context] - ENGINE-16004 Exception while closing command context: execution 4e3a7c73-c082-11ec-bc67-a674be068772 doesn't exist: execution is null
+org.camunda.bpm.engine.exception.NullValueException: execution 4e3a7c73-c082-11ec-bc67-a674be068772 doesn't exist: execution is null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.camunda.bpm.engine.impl.util.EnsureUtil.generateException(EnsureUtil.java:344)
+	at org.camunda.bpm.engine.impl.util.EnsureUtil.ensureNotNull(EnsureUtil.java:49)
+	at org.camunda.bpm.engine.impl.util.EnsureUtil.ensureNotNull(EnsureUtil.java:44)
+	at org.camunda.bpm.engine.impl.cmd.SetExecutionVariablesCmd.getEntity(SetExecutionVariablesCmd.java:44)
+	at org.camunda.bpm.engine.impl.cmd.SetExecutionVariablesCmd.getEntity(SetExecutionVariablesCmd.java:29)
+	at org.camunda.bpm.engine.impl.cmd.AbstractVariableCmd.execute(AbstractVariableCmd.java:49)
+	at org.camunda.bpm.engine.impl.cmd.AbstractVariableCmd.execute(AbstractVariableCmd.java:27)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:24)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:104)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:42)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:40)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:66)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.camunda.bpm.engine.impl.RuntimeServiceImpl.setVariables(RuntimeServiceImpl.java:366)
+	at org.camunda.bpm.engine.impl.RuntimeServiceImpl.setVariables(RuntimeServiceImpl.java:356)
+	at org.camunda.bpm.engine.impl.RuntimeServiceImpl.setVariable(RuntimeServiceImpl.java:343)
+	at com.zhongan.flow.api.impl.FlowServiceImpl.persistIdmVariable(FlowServiceImpl.java:1579)
+	at com.zhongan.flow.api.impl.FlowServiceImpl.lambda$notifyProcess$11(FlowServiceImpl.java:986)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$Lambda$82/1502692563.call(Unknown Source)
+	at com.zhongan.flow.api.impl.AbstractFlowService.executeWithAuth(AbstractFlowService.java:72)
+	at com.zhongan.flow.api.impl.FlowServiceImpl.notifyProcess(FlowServiceImpl.java:963)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$FastClassBySpringCGLIB$$d91ec059.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.zhongan.flow.api.log.AroundLogger.log(AroundLogger.java:31)
+	at sun.reflect.GeneratedMethodAccessor434.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at net.bull.javamelody.MonitoringSpringInterceptor.invoke(MonitoringSpringInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$EnhancerBySpringCGLIB$$3ac07581.notifyProcess(<generated>)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$FastClassBySpringCGLIB$$d91ec059.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$EnhancerBySpringCGLIB$$ae83199f.notifyProcess(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:664)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.camunda.bpm.engine.rest.filter.CacheControlFilter.doFilter(CacheControlFilter.java:41)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.camunda.bpm.webapp.impl.security.filter.SecurityFilter.doFilterSecure(SecurityFilter.java:67)
+	at org.camunda.bpm.webapp.impl.security.filter.SecurityFilter.doFilter(SecurityFilter.java:51)
+	at org.camunda.bpm.spring.boot.starter.webapp.filter.LazyDelegateFilter.doFilter(LazyDelegateFilter.java:44)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at com.zhongan.flow.sso.filter.LoginFilter.doFilter(LoginFilter.java:37)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter$1.execute(AuthenticationFilter.java:58)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter$1.execute(AuthenticationFilter.java:56)
+	at org.camunda.bpm.webapp.impl.security.SecurityActions.runWithAuthentications(SecurityActions.java:40)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter.doFilter(AuthenticationFilter.java:56)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:232)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:209)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:673)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:591)
+	at java.lang.Thread.run(Thread.java:745)
+2022-04-20 16:17:25,942 [qtp1199742317-1125] INFO  [com.zhongan.flow.api.log.AroundLogger] - end public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.notifyProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):FlowResult [code=0, message=null, result=HaUwPolicy(id=1115001, uwSourceType=2, uwStatus=9, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141033, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:17:23 GMT+08:00 2022, uwFinishTime=Wed Apr 20 16:17:25 GMT+08:00 2022, endorseType=4, remark=null, uwEscaUser=null, uwDecision=1, uwLevel=null, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=马上6, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo=null, isDeleted=null, uwReturnReasonType=null, channelCode=null), resultType=class com.zhongan.open.minos.share.domain.HaUwPolicy]
+2022-04-20 16:18:17,903 [qtp1199742317-1108] INFO  [com.zhongan.flow.api.log.AroundLogger] - begin public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String):[1101050000001, IHYGEIA_EDT, 8P11010522130001282676|2P11010522130001141034, {"endorsementType":"8","policyEndorReqDTO":{"applicationMethodEnum":"CustomerForward","effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorReasonEnum":"CustomerApp","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false},"type":"normal"}]
+2022-04-20 16:18:17,920 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ProcessInstance[6ed161d8-c082-11ec-bc67-a674be068772]
+2022-04-20 16:18:17,921 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"endorsementType":"8","policyEndorReqDTO":{"applicationMethodEnum":"CustomerForward","effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorReasonEnum":"CustomerApp","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false},"type":"normal"}
+2022-04-20 16:18:17,922 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is IhygStartFlow(policyEndorReqDTO=PolicyEndorReqDTO(endorId=null, policyNo=8P11010522130001282676, endorNo=2P11010522130001141034, policyId=null, endorsementTypeEnum=MODIFY_SPECIAL_AGREEMENT, channelOrderNo=null, creator=null, reviewer=null, underwriter=null, reviewComments=null, underwriteComments=null, reviewTime=null, underwriteTime=null, operator=陈思思, operatorId=1101050000001, bpmOperatorId=null, attachmentDTOS=null, applicantName=null, applicantCertiType=null, applicantCertiNo=null, applicantPhone=null, channelSystemCode=null, applicationTime=null, applicationMethodEnum=CustomerForward, endorsementStatusEnum=null, validationTime=null, hasCommission=null, fullSurrender=null, endorReasonEnum=CustomerApp, SurrenderReasonEnum=null, haIPolicyPayeeDTO=null, surrenderReason=null, remark=null, fromWorkFlow=false, mobile=null, terminationCause=null, terminationComments=null, haICsChangeBasicInfoDTOBefore=null, haICsChangeBasicInfoDTOAfter=null, currentStep=null, surrenderSecondReason=null, batchPolicyType=null, generalPremiumCalculation=false, changePremium=null, haICsCustomerTempDTO=null, paymentTradeNo=null, endorsementInsureds=null, surrenderPremiumTotal=null, formulaText=null, staffOperation=false, extraSpContentBefore=null, extraSpContentAfter=null, standardContent=null, finalContent=null, rollbackNo=null, effectAfterPaid=NO, newPaymentDateTime=null, rollbackEndorsementType=null, isUseChangeItem=null, userChangedItem=null, holderChangedItems=null, endorsementOperation=null, paymentOrderNo=null, underwriteReturnReason=null, extraInfo=null, inheritOrNot=null, isNoRefund=null, hasClaimGreaterThan0=null, createTime=null, endorsementCode=null, endorSeqNo=null, phasePaidInAdvanceSurrender=null, endorsementPaymentInfos=null, refundAmt=null, handingFee=null, businessOrgCode=null, campaignName=null, planCode=null, planName=null, newPlanCode=null, argueSolution=null, arbitrationInstitution=null, jurisdiction=null, businessNo=null, systemCode=null, highwayHisInfoList=null, isEffectAfter=null, premium=null), policyBatchEndorReqDTO=null, type=normal, endorsementType=8)
+2022-04-20 16:18:17,923 [qtp1199742317-1108] INFO  [com.zhongan.health.flow.ihygeia.edt.listener.IhygStartFlowListener] - ==IhygStartFlowListener==入参{"endorsementType":"8","policyEndorReqDTO":{"applicationMethodEnum":"CustomerForward","effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorReasonEnum":"CustomerApp","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false},"type":"normal"}
+2022-04-20 16:18:18,082 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"result":"2P11010522130001141034","code":"0"}
+2022-04-20 16:18:18,083 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: null
+2022-04-20 16:18:18,084 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: BaseResult [code=0, message=null, result=2P11010522130001141034]
+2022-04-20 16:18:18,085 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"result":"2P11010522130001141034","code":"0"}
+2022-04-20 16:18:18,086 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {USR_type=normal, USR_policyNo=8P11010522130001282676, USR_creator=陈思思, USR_endorsementType=8} in task ProcessInstance[6ed161d8-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:18,087 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+} in execution 6ed161d8-c082-11ec-bc67-a674be068772 
+2022-04-20 16:18:18,102 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - task: 6eed4e5a-c082-11ec-bc67-a674be068772, should recover assignee? true
+2022-04-20 16:18:18,103 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - try to the historic assignee of the task key TSK_DRAFT of instanceId 6ed161d8-c082-11ec-bc67-a674be068772 :
+2022-04-20 16:18:18,118 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - no historic assingee is found
+2022-04-20 16:18:18,118 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - try to count the historic task key TSK_DRAFT of instanceId 6ed161d8-c082-11ec-bc67-a674be068772 :
+2022-04-20 16:18:18,124 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - the historic task count is 0
+2022-04-20 16:18:18,124 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - set user 1101050000001 as assignee for task Task[6eed4e5a-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:18,130 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - bizInput is not in flow context, so read it from variable scope
+2022-04-20 16:18:18,130 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizJSON is {"endorsementType":"8","policyEndorReqDTO":{"applicationMethodEnum":"CustomerForward","effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorReasonEnum":"CustomerApp","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false},"type":"normal"}
+2022-04-20 16:18:18,130 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizInput object is null
+2022-04-20 16:18:18,131 [qtp1199742317-1108] INFO  [com.zhongan.health.flow.ihygeia.edt.listener.IhygClaimTaskListener] - operator:1101050000001,businessKey:8P11010522130001282676|2P11010522130001141034,taskDefKey:TSK_DRAFT,assignee:1101050000001
+2022-04-20 16:18:18,166 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: BaseResult [code=0, message=null, result=2P11010522130001141034]
+2022-04-20 16:18:18,167 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: BaseResult [code=0, message=null, result=2P11010522130001141034]
+2022-04-20 16:18:18,167 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizOutput is true
+2022-04-20 16:18:18,168 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - Set flow variables {} in task Task[6eed4e5a-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:18,168 [qtp1199742317-1108] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - Set business variables {} in task Task[6eed4e5a-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:18,362 [qtp1199742317-1108] INFO  [com.zhongan.flow.api.cron.ProcessUpdateSpendingService] - update: 
+2022-04-20 16:18:18,397 [qtp1199742317-1108] INFO  [com.zhongan.flow.api.cron.ProcessUpdateSpendingService] - suspends after sort: []
+2022-04-20 16:18:18,452 [qtp1199742317-1108] INFO  [com.zhongan.flow.api.log.AroundLogger] - end public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String):FlowResult [code=0, message=null, result=BaseResult [code=0, message=null, result=2P11010522130001141034], resultType=class com.zhongan.health.common.share.bean.BaseResult]
+2022-04-20 16:18:54,627 [qtp1199742317-1124] INFO  [com.zhongan.flow.api.log.AroundLogger] - begin public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.completeTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):[1101050000001, IHYGEIA_EDT, 8P11010522130001282676|2P11010522130001141034, TSK_DRAFT, {"draftCancel":false,"policyEndorReqDTO":{"effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}]
+2022-04-20 16:18:54,687 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ProcessInstance[6ed161d8-c082-11ec-bc67-a674be068772]
+2022-04-20 16:18:54,688 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"draftCancel":false,"policyEndorReqDTO":{"effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:18:54,689 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is IhygDraft(draftCancel=false, autoReviewPass=false, policyEndorReqDTO=PolicyEndorReqDTO(endorId=null, policyNo=8P11010522130001282676, endorNo=2P11010522130001141034, policyId=null, endorsementTypeEnum=MODIFY_SPECIAL_AGREEMENT, channelOrderNo=null, creator=null, reviewer=null, underwriter=null, reviewComments=null, underwriteComments=null, reviewTime=null, underwriteTime=null, operator=陈思思, operatorId=1101050000001, bpmOperatorId=null, attachmentDTOS=null, applicantName=null, applicantCertiType=null, applicantCertiNo=null, applicantPhone=null, channelSystemCode=null, applicationTime=null, applicationMethodEnum=null, endorsementStatusEnum=PENDINGREVIEW, validationTime=null, hasCommission=null, fullSurrender=null, endorReasonEnum=null, SurrenderReasonEnum=null, haIPolicyPayeeDTO=null, surrenderReason=null, remark=null, fromWorkFlow=false, mobile=null, terminationCause=null, terminationComments=null, haICsChangeBasicInfoDTOBefore=null, haICsChangeBasicInfoDTOAfter=null, currentStep=null, surrenderSecondReason=null, batchPolicyType=null, generalPremiumCalculation=false, changePremium=null, haICsCustomerTempDTO=null, paymentTradeNo=null, endorsementInsureds=null, surrenderPremiumTotal=null, formulaText=null, staffOperation=false, extraSpContentBefore=null, extraSpContentAfter=null, standardContent=null, finalContent=null, rollbackNo=null, effectAfterPaid=NO, newPaymentDateTime=null, rollbackEndorsementType=null, isUseChangeItem=null, userChangedItem=null, holderChangedItems=null, endorsementOperation=null, paymentOrderNo=null, underwriteReturnReason=null, extraInfo=null, inheritOrNot=null, isNoRefund=null, hasClaimGreaterThan0=null, createTime=null, endorsementCode=null, endorSeqNo=null, phasePaidInAdvanceSurrender=null, endorsementPaymentInfos=null, refundAmt=null, handingFee=null, businessOrgCode=null, campaignName=null, planCode=null, planName=null, newPlanCode=null, argueSolution=null, arbitrationInstitution=null, jurisdiction=null, businessNo=null, systemCode=null, highwayHisInfoList=null, isEffectAfter=null, premium=null), policyBatchEndorReqDTO=null)
+2022-04-20 16:18:54,689 [qtp1199742317-1124] INFO  [com.zhongan.health.flow.ihygeia.edt.listener.IhygDraftListener] - ==IhygDraftListener==入参{"autoReviewPass":false,"draftCancel":false,"policyEndorReqDTO":{"effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:18:54,852 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"result":"2P11010522130001141034","code":"0"}
+2022-04-20 16:18:54,852 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: null
+2022-04-20 16:18:54,853 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: BaseResult [code=0, message=null, result=2P11010522130001141034]
+2022-04-20 16:18:54,858 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"result":"2P11010522130001141034","code":"0"}
+2022-04-20 16:18:54,859 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {} in task ProcessInstance[6ed161d8-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:54,859 [qtp1199742317-1124] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+  draftCancel => Untyped value 'false'
+} in execution 6ed161d8-c082-11ec-bc67-a674be068772 
+2022-04-20 16:18:55,082 [qtp1199742317-1124] INFO  [com.zhongan.flow.api.log.AroundLogger] - end public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.completeTask(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):FlowResult [code=0, message=null, result=BaseResult [code=0, message=null, result=2P11010522130001141034], resultType=class com.zhongan.health.common.share.bean.BaseResult]
+2022-04-20 16:18:55,173 [pool-1-thread-2] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - 'BIZ_INPUT' is {"draftCancel":false,"policyEndorReqDTO":{"effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:18:55,173 [pool-1-thread-2] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - 'BIZ_INPUT' object is IhygDraft(draftCancel=false, autoReviewPass=false, policyEndorReqDTO=PolicyEndorReqDTO(endorId=null, policyNo=8P11010522130001282676, endorNo=2P11010522130001141034, policyId=null, endorsementTypeEnum=MODIFY_SPECIAL_AGREEMENT, channelOrderNo=null, creator=null, reviewer=null, underwriter=null, reviewComments=null, underwriteComments=null, reviewTime=null, underwriteTime=null, operator=陈思思, operatorId=1101050000001, bpmOperatorId=null, attachmentDTOS=null, applicantName=null, applicantCertiType=null, applicantCertiNo=null, applicantPhone=null, channelSystemCode=null, applicationTime=null, applicationMethodEnum=null, endorsementStatusEnum=PENDINGREVIEW, validationTime=null, hasCommission=null, fullSurrender=null, endorReasonEnum=null, SurrenderReasonEnum=null, haIPolicyPayeeDTO=null, surrenderReason=null, remark=null, fromWorkFlow=false, mobile=null, terminationCause=null, terminationComments=null, haICsChangeBasicInfoDTOBefore=null, haICsChangeBasicInfoDTOAfter=null, currentStep=null, surrenderSecondReason=null, batchPolicyType=null, generalPremiumCalculation=false, changePremium=null, haICsCustomerTempDTO=null, paymentTradeNo=null, endorsementInsureds=null, surrenderPremiumTotal=null, formulaText=null, staffOperation=false, extraSpContentBefore=null, extraSpContentAfter=null, standardContent=null, finalContent=null, rollbackNo=null, effectAfterPaid=NO, newPaymentDateTime=null, rollbackEndorsementType=null, isUseChangeItem=null, userChangedItem=null, holderChangedItems=null, endorsementOperation=null, paymentOrderNo=null, underwriteReturnReason=null, extraInfo=null, inheritOrNot=null, isNoRefund=null, hasClaimGreaterThan0=null, createTime=null, endorsementCode=null, endorSeqNo=null, phasePaidInAdvanceSurrender=null, endorsementPaymentInfos=null, refundAmt=null, handingFee=null, businessOrgCode=null, campaignName=null, planCode=null, planName=null, newPlanCode=null, argueSolution=null, arbitrationInstitution=null, jurisdiction=null, businessNo=null, systemCode=null, highwayHisInfoList=null, isEffectAfter=null, premium=null), policyBatchEndorReqDTO=null)
+2022-04-20 16:18:55,173 [pool-1-thread-2] INFO  [com.zhongan.health.flow.ihygeia.edt.delegate.AutoReviewDelegateExpression] - ==AutoReviewDelegateExpression invokeBizLogic==params:{"autoReviewPass":false,"draftCancel":false,"policyEndorReqDTO":{"effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:18:55,232 [pool-1-thread-2] INFO  [com.zhongan.health.flow.ihygeia.edt.delegate.AutoReviewDelegateExpression] - ==call IH autoReview fail,params:{"autoReviewPass":false,"draftCancel":false,"policyEndorReqDTO":{"effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}},result:{"code":"0","result":true}
+2022-04-20 16:18:55,233 [pool-1-thread-2] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Return value of invokeBizLogic is {"result":{"autoReviewPass":true,"draftCancel":false,"policyEndorReqDTO":{"policyNo":"8P11010522130001282676","operator":"陈思思","effectAfterPaid":"NO","operatorId":"1101050000001","fromWorkFlow":false,"generalPremiumCalculation":false,"endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","staffOperation":false,"endorNo":"2P11010522130001141034","endorsementStatusEnum":"PENDINGREVIEW"}},"code":"0"}
+2022-04-20 16:18:55,233 [pool-1-thread-2] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Set business variables {} in task ProcessInstance[6ed161d8-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:55,233 [pool-1-thread-2] INFO  [com.zhongan.health.flow.ihygeia.edt.delegate.AutoReviewDelegateExpression] - ==AutoReviewDelegateExpression createFlowVariables==params:{"autoReviewPass":true,"draftCancel":false,"policyEndorReqDTO":{"effectAfterPaid":"NO","endorNo":"2P11010522130001141034","endorsementStatusEnum":"PENDINGREVIEW","endorsementTypeEnum":"MODIFY_SPECIAL_AGREEMENT","fromWorkFlow":false,"generalPremiumCalculation":false,"operator":"陈思思","operatorId":"1101050000001","policyNo":"8P11010522130001282676","staffOperation":false}}
+2022-04-20 16:18:55,336 [pool-1-thread-2] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Set flow variables {
+  autoReviewPass => Untyped value 'true'
+  uwInput => Untyped value '{"applyDate":"2022-03-02 15:41:21","bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","deny":false,"endorseName":"陈思思","endorseType":8,"holderId":545008,"holderName":"changed","isNeedReinsurance":"N","man":false,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","operatorId":"1101050000001","operatorName":"陈思思","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"shouldFailAtAutoUW":false,"systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"validateTime":"2022-04-21 00:00:00"}'
+  reviewReject => Untyped value 'false'
+  reviewCancel => Untyped value 'false'
+} in execution ProcessInstance[6ed161d8-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:55,371 [pool-1-thread-2] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ProcessInstance[85241acc-c082-11ec-bc67-a674be068772]
+2022-04-20 16:18:55,371 [pool-1-thread-2] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - bizInput is not in flow context, so read it from variable scope
+2022-04-20 16:18:55,372 [pool-1-thread-2] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"applyDate":"2022-03-02 15:41:21","bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","deny":false,"endorseName":"陈思思","endorseType":8,"holderId":545008,"holderName":"changed","isNeedReinsurance":"N","man":false,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","operatorId":"1101050000001","operatorName":"陈思思","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"shouldFailAtAutoUW":false,"systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"validateTime":"2022-04-21 00:00:00"}
+2022-04-20 16:18:55,372 [pool-1-thread-2] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is MinosStartFlow(man=false, reject=false, deny=false, shouldFailAtAutoUW=false, uwSourceType=2, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141034, policyNo=8P11010522130001282676, applyDate=2022-03-02 15:41:21, systemSource=IHYGEIA, policySource=13, validateTime=2022-04-21 00:00:00, endorseType=8, endorseName=陈思思, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, isNeedReinsurance=N, holderId=545008, holderName=changed, holderCertType=null, holderCertNo=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=1101050000001, operatorName=陈思思, businessOrgCode=1101050000)
+2022-04-20 16:18:55,372 [pool-1-thread-2] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - MinosStartFlow:{"applyDate":"2022-03-02 15:41:21","bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","deny":false,"endorseName":"陈思思","endorseType":8,"holderId":545008,"holderName":"changed","isNeedReinsurance":"N","man":false,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","operatorId":"1101050000001","operatorName":"陈思思","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"shouldFailAtAutoUW":false,"systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"validateTime":"2022-04-21 00:00:00"}
+2022-04-20 16:18:55,372 [pool-1-thread-2] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - haUwPolicy:{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","endorseName":"陈思思","endorseType":8,"holderId":545008,"holderName":"changed","isNeedReinsurance":"N","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","operatorId":"1101050000001","operatorName":"陈思思","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"validateTime":1650470400000}
+2022-04-20 16:18:55,476 [pool-1-thread-2] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - 创建核保任务成功
+2022-04-20 16:18:55,476 [pool-1-thread-2] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"result":1115002,"code":"0"}
+2022-04-20 16:18:55,476 [pool-1-thread-2] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: BaseResult [code=9999, message=创建核保任务接口API处理异常。ERROR:创建核保任务接口API处理异常。ERROR:
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1095001' for key 'PRIMARY'
+### The error may exist in URL [jar:file:/root/startup/nw-ha-minos.jar!/BOOT-INF/classes!/mybatis/mapper/sqlmap_HaUwPolicy.xml]
+### The error may involve com.zhongan.minos.component.uwdeal.dao.HaUwPolicyDAO.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into ha_uw_policy (id, uw_source_type, uw_status,         object_id, object_no, policy_no,         apply_date, system_source, policy_source,validate_time,         uw_finish_time, endorse_type, remark, uw_return_reason_type,         uw_esca_user, uw_decision, uw_level,         super_auth_flag, uw_policy_category, channel_category,         primary_partner_id, primary_partner_full_name, second_partner_id,         second_partner_full_name, business_org_code,is_need_reinsurance, holder_id,         holder_name,holder_cert_type,holder_cert_no,endorse_name, department_id, department_name,is_locked, locked_id, locked_name,         locked_time, channel_trade_no, bd_salesman_id,         bd_salesman_name, press_number,press_time,creator, gmt_created,         modifier, gmt_modified, is_deleted,extra_info         )         values (?, ?, ?,         ?, ?, ?,         ?, ?,?, ?,         ?, ?, ?, ?,         ?, ?, ?,         ?, ?, ?,         ?, ?, ?,         ?,?, ?, ?,         ?,?,?,?,         ?,?,?, ?,  ?,         ?, ?, ?,         ?,?, ?,         ?, now(),         ?, now(), ?, ?         )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1095001' for key 'PRIMARY'
+; SQL []; Duplicate entry '1095001' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1095001' for key 'PRIMARY', result=null]
+2022-04-20 16:18:55,477 [pool-1-thread-2] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: BaseResult [code=9999, message=创建核保任务接口API处理异常。ERROR:创建核保任务接口API处理异常。ERROR:
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1095001' for key 'PRIMARY'
+### The error may exist in URL [jar:file:/root/startup/nw-ha-minos.jar!/BOOT-INF/classes!/mybatis/mapper/sqlmap_HaUwPolicy.xml]
+### The error may involve com.zhongan.minos.component.uwdeal.dao.HaUwPolicyDAO.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into ha_uw_policy (id, uw_source_type, uw_status,         object_id, object_no, policy_no,         apply_date, system_source, policy_source,validate_time,         uw_finish_time, endorse_type, remark, uw_return_reason_type,         uw_esca_user, uw_decision, uw_level,         super_auth_flag, uw_policy_category, channel_category,         primary_partner_id, primary_partner_full_name, second_partner_id,         second_partner_full_name, business_org_code,is_need_reinsurance, holder_id,         holder_name,holder_cert_type,holder_cert_no,endorse_name, department_id, department_name,is_locked, locked_id, locked_name,         locked_time, channel_trade_no, bd_salesman_id,         bd_salesman_name, press_number,press_time,creator, gmt_created,         modifier, gmt_modified, is_deleted,extra_info         )         values (?, ?, ?,         ?, ?, ?,         ?, ?,?, ?,         ?, ?, ?, ?,         ?, ?, ?,         ?, ?, ?,         ?, ?, ?,         ?,?, ?, ?,         ?,?,?,?,         ?,?,?, ?,  ?,         ?, ?, ?,         ?,?, ?,         ?, now(),         ?, now(), ?, ?         )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1095001' for key 'PRIMARY'
+; SQL []; Duplicate entry '1095001' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1095001' for key 'PRIMARY', result=null]
+2022-04-20 16:18:55,477 [pool-1-thread-2] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"result":1115002,"code":"0"}
+2022-04-20 16:18:55,477 [pool-1-thread-2] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - bizOutput:BaseResult [code=0, message=null, result=1115002]
+2022-04-20 16:18:55,477 [pool-1-thread-2] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - success:true
+2022-04-20 16:18:55,478 [pool-1-thread-2] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {} in task ProcessInstance[85241acc-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:55,478 [pool-1-thread-2] INFO  [com.zhongan.health.flow.minos.listener.MinosStartFlowListener] - in:{"manualUW":false,"uwId":1115002}
+2022-04-20 16:18:55,478 [pool-1-thread-2] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+  autoUWInput => Untyped value '{"manualUW":false,"uwId":1115002}'
+} in execution 85241acc-c082-11ec-bc67-a674be068772 
+2022-04-20 16:18:55,788 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - 'autoUWInput' is {"manualUW":false,"uwId":1115002}
+2022-04-20 16:18:55,788 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - 'autoUWInput' object is MinosAutoUWInput(uwId=1115002, manualUW=false)
+2022-04-20 16:18:55,788 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - ----minosAutoUWDelegate flow start-----
+2022-04-20 16:18:55,788 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - MinosAutoUWInput:{"manualUW":false,"uwId":1115002}
+2022-04-20 16:18:55,808 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - boom3:uwAutoUwService.excuteAutoUw start...
+2022-04-20 16:18:55,826 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - boom3:uwAutoUwService.excuteAutoUw result:{"errorCode":"9999","result":{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","curAuditLevel":1,"endorseName":"陈思思","endorseType":8,"holderId":545008,"holderName":"changed","id":1115002,"isLocked":"N","isNeedReinsurance":"N","lockedId":"N/A","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"superAuthFlag":"N","systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"uwStatus":0,"validateTime":1650442735000},"success":true}
+2022-04-20 16:18:55,827 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Return value of invokeBizLogic is {"result":{"objectNo":"8P11010522130001282676|2P11010522130001141034","businessOrgCode":"1101050000","channelCategory":"300","policyNo":"8P11010522130001282676","secondPartnerFullName":"中元经纪公司","endorseType":8,"secondPartnerId":5,"superAuthFlag":"N","lockedId":"N/A","systemSource":"IHYGEIA","uwStatus":0,"isLocked":"N","id":1115002,"curAuditLevel":1,"objectId":7009,"bdSalesmanName":"金庆玲","holderName":"changed","endorseName":"陈思思","uwSourceType":2,"policySource":"13","holderId":545008,"uwPolicyCategory":"2","validateTime":1650442735000,"channelTradeNo":"635a7bb608500505be9699c38231a617-1","applyDate":1646206881000,"isNeedReinsurance":"N","bdSalesmanId":1101050000003},"code":"0"}
+2022-04-20 16:18:55,827 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - minosAutoUWDelegate bizOutput{"code":"0","result":{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","curAuditLevel":1,"endorseName":"陈思思","endorseType":8,"holderId":545008,"holderName":"changed","id":1115002,"isLocked":"N","isNeedReinsurance":"N","lockedId":"N/A","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"superAuthFlag":"N","systemSource":"IHYGEIA","uwPolicyCategory":"2","uwSourceType":2,"uwStatus":0,"validateTime":1650442735000}}
+2022-04-20 16:18:55,827 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Set business variables {} in task ProcessInstance[85241acc-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:55,827 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - minosAutoUWDelegate variables bizOutput
+2022-04-20 16:18:55,828 [pool-1-thread-3] INFO  [com.zhongan.health.flow.minos.delegate.MinosAutoUWDelegate] - minosAutoUWDelegate uwResult:{"deny":false,"endorseName":"陈思思","holderId":545008,"id":1115002,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"shouldFailUWA":false,"uwSourceType":2,"uwStatus":0,"validateTime":"2022-04-20 16:18:55"}
+2022-04-20 16:18:55,833 [pool-1-thread-3] INFO  [com.zhongan.flow.common.delegate.AbstractJavaDelegate] - Set flow variables {
+  autoUWInput => Untyped value '{"manualUW":false,"uwId":1115002}'
+  manualUW => Untyped value 'false'
+} in execution ProcessInstance[85241acc-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:56,380 [qtp1199742317-1129] INFO  [com.zhongan.flow.api.log.AroundLogger] - begin public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.notifyProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):[SYSTEM, MSG_AUTO_UW_MINOS, MINOS, 8P11010522130001282676|2P11010522130001141034, {"manualUW":true,"uwId":1115002}]
+2022-04-20 16:18:56,426 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - AbstractExecutionListener execution is ScopeExecution[856ce3ab-c082-11ec-bc67-a674be068772]
+2022-04-20 16:18:56,427 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizJSON is {"manualUW":true,"uwId":1115002}
+2022-04-20 16:18:56,427 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizInput object is MinosAutoUWInput(uwId=1115002, manualUW=true)
+2022-04-20 16:18:56,428 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - ----minosAutoUWListener flow start-----
+2022-04-20 16:18:56,428 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - MinosAutoUWInput:{"manualUW":true,"uwId":1115002}
+2022-04-20 16:18:56,447 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - 查询核保任务baseResult：{"errorCode":"9000","result":{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","curAuditLevel":1,"endorseName":"陈思思","endorseType":8,"extraInfo":"{\"departmentType\":2}","holderId":545008,"holderName":"changed","id":1115002,"isLocked":"N","isNeedReinsurance":"N","lockedId":"N/A","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","operatorId":"N/A","operatorName":"N/A","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"superAuthFlag":"N","systemSource":"IHYGEIA","uwLevel":1,"uwPolicyCategory":"2","uwSourceType":2,"uwStatus":1,"validateTime":1650442735000},"success":true}
+2022-04-20 16:18:56,448 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - 是否触发自核 false
+2022-04-20 16:18:56,466 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Return value of invokeBizLogic is {"objectNo":"8P11010522130001282676|2P11010522130001141034","businessOrgCode":"1101050000","channelCategory":"300","policyNo":"8P11010522130001282676","secondPartnerFullName":"中元经纪公司","endorseType":8,"secondPartnerId":5,"operatorName":"N/A","superAuthFlag":"N","lockedId":"N/A","systemSource":"IHYGEIA","uwStatus":1,"isLocked":"N","id":1115002,"curAuditLevel":1,"operatorId":"N/A","objectId":7009,"bdSalesmanName":"金庆玲","holderName":"changed","endorseName":"陈思思","uwSourceType":2,"policySource":"13","uwLevel":1,"holderId":545008,"uwPolicyCategory":"2","validateTime":1650442735000,"channelTradeNo":"635a7bb608500505be9699c38231a617-1","applyDate":1646206881000,"isNeedReinsurance":"N","bdSalesmanId":1101050000003,"extraInfo":"{\"departmentType\":2}"}
+2022-04-20 16:18:56,467 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: null
+2022-04-20 16:18:56,467 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: HaUwPolicy(id=1115002, uwSourceType=2, uwStatus=1, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141034, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:18:55 GMT+08:00 2022, uwFinishTime=null, endorseType=8, remark=null, uwEscaUser=null, uwDecision=null, uwLevel=1, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=changed, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo={"departmentType":2}, isDeleted=null, uwReturnReasonType=null, channelCode=null)
+2022-04-20 16:18:56,473 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - BizOutput is {"objectNo":"8P11010522130001282676|2P11010522130001141034","businessOrgCode":"1101050000","channelCategory":"300","policyNo":"8P11010522130001282676","secondPartnerFullName":"中元经纪公司","endorseType":8,"secondPartnerId":5,"operatorName":"N/A","superAuthFlag":"N","lockedId":"N/A","systemSource":"IHYGEIA","uwStatus":1,"isLocked":"N","id":1115002,"curAuditLevel":1,"operatorId":"N/A","objectId":7009,"bdSalesmanName":"金庆玲","holderName":"changed","endorseName":"陈思思","uwSourceType":2,"policySource":"13","uwLevel":1,"holderId":545008,"uwPolicyCategory":"2","validateTime":1650442735000,"channelTradeNo":"635a7bb608500505be9699c38231a617-1","applyDate":1646206881000,"isNeedReinsurance":"N","bdSalesmanId":1101050000003,"extraInfo":"{\"departmentType\":2}"}
+2022-04-20 16:18:56,474 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set business variables {} in task ScopeExecution[856ce3ab-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:56,474 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - minosAutoUWListener uwResult input:{"applyDate":1646206881000,"bdSalesmanId":1101050000003,"bdSalesmanName":"金庆玲","businessOrgCode":"1101050000","channelCategory":"300","channelTradeNo":"635a7bb608500505be9699c38231a617-1","curAuditLevel":1,"endorseName":"陈思思","endorseType":8,"extraInfo":"{\"departmentType\":2}","holderId":545008,"holderName":"changed","id":1115002,"isLocked":"N","isNeedReinsurance":"N","lockedId":"N/A","objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","operatorId":"N/A","operatorName":"N/A","policyNo":"8P11010522130001282676","policySource":"13","secondPartnerFullName":"中元经纪公司","secondPartnerId":5,"superAuthFlag":"N","systemSource":"IHYGEIA","uwLevel":1,"uwPolicyCategory":"2","uwSourceType":2,"uwStatus":1,"validateTime":1650442735000}
+2022-04-20 16:18:56,474 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosAutoUWListener] - minosAutoUWListener uwResult:{"deny":false,"endorseName":"陈思思","holderId":545008,"id":1115002,"objectId":7009,"objectNo":"8P11010522130001282676|2P11010522130001141034","operatorId":"SYSTEM","operatorName":"SYSTEM","policyNo":"8P11010522130001282676","policySource":"13","reject":false,"shouldFailUWA":false,"uwLevel":1,"uwSourceType":2,"uwStatus":1,"validateTime":"2022-04-20 16:18:55"},manualUWtrue
+2022-04-20 16:18:56,480 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractExecutionListener] - Set flow variables {
+  manualUW => Untyped value 'true'
+} in execution 856ce3ab-c082-11ec-bc67-a674be068772 
+2022-04-20 16:18:56,514 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - task: 85d28355-c082-11ec-bc67-a674be068772, should recover assignee? true
+2022-04-20 16:18:56,514 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - try to the historic assignee of the task key TSK_MANUAL_UW of instanceId 85241acc-c082-11ec-bc67-a674be068772 :
+2022-04-20 16:18:56,554 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.RecoverHistAssigneeListener] - no historic assingee is found
+2022-04-20 16:18:56,555 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - try to count the historic task key TSK_MANUAL_UW of instanceId 85241acc-c082-11ec-bc67-a674be068772 :
+2022-04-20 16:18:56,560 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - the historic task count is 0
+2022-04-20 16:18:56,561 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - set user SYSTEM as assignee for task Task[85d28355-c082-11ec-bc67-a674be068772] 
+2022-04-20 16:18:56,561 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - bizInput is not in flow context, so read it from variable scope
+2022-04-20 16:18:56,562 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizJSON is {"manualUW":true,"uwId":1115002}
+2022-04-20 16:18:56,562 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizInput object is null
+2022-04-20 16:18:56,563 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosClaimTaskListener] - operator:SYSTEM,busniessKey:8P11010522130001282676|2P11010522130001141034,taskDefKey:TSK_MANUAL_UW,assignee:SYSTEM
+2022-04-20 16:18:56,563 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosClaimTaskListener] - ----minosClaimTaskListener flow start-----
+2022-04-20 16:18:56,564 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: HaUwPolicy(id=1115002, uwSourceType=2, uwStatus=1, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141034, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:18:55 GMT+08:00 2022, uwFinishTime=null, endorseType=8, remark=null, uwEscaUser=null, uwDecision=null, uwLevel=1, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=changed, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo={"departmentType":2}, isDeleted=null, uwReturnReasonType=null, channelCode=null)
+2022-04-20 16:18:56,564 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: HaUwPolicy(id=1115002, uwSourceType=2, uwStatus=1, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141034, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:18:55 GMT+08:00 2022, uwFinishTime=null, endorseType=8, remark=null, uwEscaUser=null, uwDecision=null, uwLevel=1, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=changed, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo={"departmentType":2}, isDeleted=null, uwReturnReasonType=null, channelCode=null)
+2022-04-20 16:18:56,565 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizOutput is null
+2022-04-20 16:18:56,566 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - bizInput is not in flow context, so read it from variable scope
+2022-04-20 16:18:56,567 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizJSON is {"manualUW":true,"uwId":1115002}
+2022-04-20 16:18:56,567 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizInput object is null
+2022-04-20 16:18:56,567 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosClaimTaskListener] - operator:SYSTEM,busniessKey:8P11010522130001282676|2P11010522130001141034,taskDefKey:TSK_MANUAL_UW,assignee:null
+2022-04-20 16:18:56,568 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosClaimTaskListener] - ----minosClaimTaskListener flow start-----
+2022-04-20 16:18:56,693 [qtp1199742317-1129] INFO  [com.zhongan.health.flow.minos.listener.MinosClaimTaskListener] - reassignFlag:null
+2022-04-20 16:18:56,717 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - biz output in context: HaUwPolicy(id=1115002, uwSourceType=2, uwStatus=1, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141034, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:18:55 GMT+08:00 2022, uwFinishTime=null, endorseType=8, remark=null, uwEscaUser=null, uwDecision=null, uwLevel=1, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=changed, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo={"departmentType":2}, isDeleted=null, uwReturnReasonType=null, channelCode=null)
+2022-04-20 16:18:56,718 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.AbstractFlowDelegation] - in the end biz output in context: HaUwPolicy(id=1115002, uwSourceType=2, uwStatus=1, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141034, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:18:55 GMT+08:00 2022, uwFinishTime=null, endorseType=8, remark=null, uwEscaUser=null, uwDecision=null, uwLevel=1, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=changed, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo={"departmentType":2}, isDeleted=null, uwReturnReasonType=null, channelCode=null)
+2022-04-20 16:18:56,720 [qtp1199742317-1129] INFO  [com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener] - BizOutput is {"success":false,"errorCode":"9999","errorMsg":"该任务处于未锁定状态，不允许执行释放操作，请确认后再次提交！"}
+2022-04-20 16:18:56,723 [qtp1199742317-1129] ERROR [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - Fail to revert assignee(processInstanceId=85241acc-c082-11ec-bc67-a674be068772,taskDefKey=TSK_MANUAL_UW)
+org.camunda.bpm.engine.ProcessEngineException: ENGINE-03051 There was an exception while invoking the TaskListener. Message: 'Exception while invoking TaskListener: Biz logic suggest rollback'
+	at org.camunda.bpm.engine.impl.db.EnginePersistenceLogger.invokeTaskListenerException(EnginePersistenceLogger.java:443)
+	at org.camunda.bpm.engine.impl.persistence.entity.TaskEntity.fireEvent(TaskEntity.java:949)
+	at org.camunda.bpm.engine.impl.persistence.entity.TaskEntity.setAssignee(TaskEntity.java:850)
+	at com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener.notify(FlowStarterAsAssigneeListener.java:57)
+	at com.zhongan.flow.common.listener.HistOrStarterAssigneeListener.notify(HistOrStarterAssigneeListener.java:28)
+	at org.camunda.bpm.engine.impl.task.delegate.TaskListenerInvocation.invoke(TaskListenerInvocation.java:41)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:54)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:87)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:59)
+	at org.camunda.bpm.engine.impl.task.listener.DelegateExpressionTaskListener.notify(DelegateExpressionTaskListener.java:56)
+	at org.camunda.bpm.engine.impl.task.delegate.TaskListenerInvocation.invoke(TaskListenerInvocation.java:41)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:54)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:87)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:59)
+	at org.camunda.bpm.engine.impl.persistence.entity.TaskEntity.fireEvent(TaskEntity.java:945)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.UserTaskActivityBehavior.performExecution(UserTaskActivityBehavior.java:61)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.TaskActivityBehavior.execute(TaskActivityBehavior.java:65)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:57)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:46)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueIfExecutionDoesNotAffectNextOperation(PvmExecutionImpl.java:1958)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:38)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:27)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1897)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1894)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:1964)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1913)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1894)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:57)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:27)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:65)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:69)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:629)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:604)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:58)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionCreateScope.scopeCreated(PvmAtomicOperationTransitionCreateScope.java:34)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationCreateScope.execute(PvmAtomicOperationCreateScope.java:50)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationCreateScope.execute(PvmAtomicOperationCreateScope.java:24)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:112)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.take(PvmExecutionImpl.java:742)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionDestroyScope.execute(PvmAtomicOperationTransitionDestroyScope.java:85)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionDestroyScope.execute(PvmAtomicOperationTransitionDestroyScope.java:33)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerEnd$1.callback(PvmAtomicOperationTransitionNotifyListenerEnd.java:42)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerEnd$1.callback(PvmAtomicOperationTransitionNotifyListenerEnd.java:37)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:1964)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1913)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerEnd.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerEnd.java:37)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerEnd.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerEnd.java:24)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:65)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:69)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:629)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:604)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:58)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:69)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:629)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:604)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:58)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.leaveActivityViaTransitions(PvmExecutionImpl.java:1010)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.leaveActivityViaTransition(PvmExecutionImpl.java:953)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.BpmnActivityBehavior.performOutgoingBehavior(BpmnActivityBehavior.java:101)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.BpmnActivityBehavior.performDefaultOutgoingBehavior(BpmnActivityBehavior.java:52)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.FlowNodeActivityBehavior.doLeave(FlowNodeActivityBehavior.java:52)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.AbstractBpmnActivityBehavior.doLeave(AbstractBpmnActivityBehavior.java:71)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityLeave.execute(PvmAtomicOperationActivityLeave.java:52)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityLeave.execute(PvmAtomicOperationActivityLeave.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1897)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1894)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:1964)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1913)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1894)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.FlowNodeActivityBehavior.leave(FlowNodeActivityBehavior.java:48)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.ReceiveTaskActivityBehavior.signal(ReceiveTaskActivityBehavior.java:36)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.signal(PvmExecutionImpl.java:721)
+	at org.camunda.bpm.engine.impl.event.EventHandlerImpl.handleIntermediateEvent(EventHandlerImpl.java:54)
+	at org.camunda.bpm.engine.impl.event.EventHandlerImpl.handleEvent(EventHandlerImpl.java:69)
+	at org.camunda.bpm.engine.impl.persistence.entity.EventSubscriptionEntity.processEventSync(EventSubscriptionEntity.java:93)
+	at org.camunda.bpm.engine.impl.persistence.entity.EventSubscriptionEntity.eventReceived(EventSubscriptionEntity.java:86)
+	at org.camunda.bpm.engine.impl.cmd.MessageEventReceivedCmd.execute(MessageEventReceivedCmd.java:82)
+	at org.camunda.bpm.engine.impl.cmd.AbstractCorrelateMessageCmd.triggerExecution(AbstractCorrelateMessageCmd.java:54)
+	at org.camunda.bpm.engine.impl.cmd.AbstractCorrelateMessageCmd.createMessageCorrelationResult(AbstractCorrelateMessageCmd.java:86)
+	at org.camunda.bpm.engine.impl.cmd.CorrelateMessageCmd.execute(CorrelateMessageCmd.java:67)
+	at org.camunda.bpm.engine.impl.cmd.CorrelateMessageCmd.execute(CorrelateMessageCmd.java:36)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:24)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:104)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:42)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:40)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:66)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.camunda.bpm.engine.impl.MessageCorrelationBuilderImpl.execute(MessageCorrelationBuilderImpl.java:240)
+	at org.camunda.bpm.engine.impl.MessageCorrelationBuilderImpl.correlateWithResult(MessageCorrelationBuilderImpl.java:184)
+	at com.zhongan.flow.api.impl.FlowServiceImpl.lambda$notifyProcess$11(FlowServiceImpl.java:981)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$Lambda$82/1502692563.call(Unknown Source)
+	at com.zhongan.flow.api.impl.AbstractFlowService.executeWithAuth(AbstractFlowService.java:72)
+	at com.zhongan.flow.api.impl.FlowServiceImpl.notifyProcess(FlowServiceImpl.java:963)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$FastClassBySpringCGLIB$$d91ec059.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.zhongan.flow.api.log.AroundLogger.log(AroundLogger.java:31)
+	at sun.reflect.GeneratedMethodAccessor434.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at net.bull.javamelody.MonitoringSpringInterceptor.invoke(MonitoringSpringInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$EnhancerBySpringCGLIB$$3ac07581.notifyProcess(<generated>)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$FastClassBySpringCGLIB$$d91ec059.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$EnhancerBySpringCGLIB$$ae83199f.notifyProcess(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:664)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.camunda.bpm.engine.rest.filter.CacheControlFilter.doFilter(CacheControlFilter.java:41)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.camunda.bpm.webapp.impl.security.filter.SecurityFilter.doFilterSecure(SecurityFilter.java:67)
+	at org.camunda.bpm.webapp.impl.security.filter.SecurityFilter.doFilter(SecurityFilter.java:51)
+	at org.camunda.bpm.spring.boot.starter.webapp.filter.LazyDelegateFilter.doFilter(LazyDelegateFilter.java:44)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at com.zhongan.flow.sso.filter.LoginFilter.doFilter(LoginFilter.java:37)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter$1.execute(AuthenticationFilter.java:58)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter$1.execute(AuthenticationFilter.java:56)
+	at org.camunda.bpm.webapp.impl.security.SecurityActions.runWithAuthentications(SecurityActions.java:40)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter.doFilter(AuthenticationFilter.java:56)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:232)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:209)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:673)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:591)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.camunda.bpm.engine.ProcessEngineException: Exception while invoking TaskListener: Biz logic suggest rollback
+	at org.camunda.bpm.engine.impl.task.listener.DelegateExpressionTaskListener.notify(DelegateExpressionTaskListener.java:60)
+	at org.camunda.bpm.engine.impl.task.delegate.TaskListenerInvocation.invoke(TaskListenerInvocation.java:41)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:54)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:87)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:59)
+	at org.camunda.bpm.engine.impl.persistence.entity.TaskEntity.fireEvent(TaskEntity.java:945)
+	... 260 common frames omitted
+Caused by: com.zhongan.flow.common.exception.RollbackException: Biz logic suggest rollback
+	at com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener.notify(AbstractGenericClaimTaskListener.java:93)
+	at org.camunda.bpm.engine.impl.task.delegate.TaskListenerInvocation.invoke(TaskListenerInvocation.java:41)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:54)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:87)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:59)
+	at org.camunda.bpm.engine.impl.task.listener.DelegateExpressionTaskListener.notify(DelegateExpressionTaskListener.java:56)
+	... 265 common frames omitted
+2022-04-20 16:18:56,725 [qtp1199742317-1129] ERROR [com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener] - Fail to set assignee(processInstanceId=85241acc-c082-11ec-bc67-a674be068772,taskDefKey=TSK_MANUAL_UW)
+org.camunda.bpm.engine.ProcessEngineException: ENGINE-03051 There was an exception while invoking the TaskListener. Message: 'Exception while invoking TaskListener: Biz logic suggest rollback'
+	at org.camunda.bpm.engine.impl.db.EnginePersistenceLogger.invokeTaskListenerException(EnginePersistenceLogger.java:443)
+	at org.camunda.bpm.engine.impl.persistence.entity.TaskEntity.fireEvent(TaskEntity.java:949)
+	at org.camunda.bpm.engine.impl.persistence.entity.TaskEntity.setAssignee(TaskEntity.java:850)
+	at org.camunda.bpm.engine.impl.cmd.AddIdentityLinkCmd.execute(AddIdentityLinkCmd.java:82)
+	at org.camunda.bpm.engine.impl.cmd.AssignTaskCmd.execute(AssignTaskCmd.java:32)
+	at org.camunda.bpm.engine.impl.cmd.AssignTaskCmd.execute(AssignTaskCmd.java:22)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:24)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:104)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:42)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:40)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:66)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.camunda.bpm.engine.impl.TaskServiceImpl.setAssignee(TaskServiceImpl.java:121)
+	at com.zhongan.flow.common.listener.FlowStarterAsAssigneeListener.notify(FlowStarterAsAssigneeListener.java:47)
+	at com.zhongan.flow.common.listener.HistOrStarterAssigneeListener.notify(HistOrStarterAssigneeListener.java:28)
+	at org.camunda.bpm.engine.impl.task.delegate.TaskListenerInvocation.invoke(TaskListenerInvocation.java:41)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:54)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:87)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:59)
+	at org.camunda.bpm.engine.impl.task.listener.DelegateExpressionTaskListener.notify(DelegateExpressionTaskListener.java:56)
+	at org.camunda.bpm.engine.impl.task.delegate.TaskListenerInvocation.invoke(TaskListenerInvocation.java:41)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:54)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:87)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:59)
+	at org.camunda.bpm.engine.impl.persistence.entity.TaskEntity.fireEvent(TaskEntity.java:945)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.UserTaskActivityBehavior.performExecution(UserTaskActivityBehavior.java:61)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.TaskActivityBehavior.execute(TaskActivityBehavior.java:65)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:57)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute$2.callback(PvmAtomicOperationActivityExecute.java:46)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueIfExecutionDoesNotAffectNextOperation(PvmExecutionImpl.java:1958)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:38)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityExecute.execute(PvmAtomicOperationActivityExecute.java:27)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1897)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1894)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:1964)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1913)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1894)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:57)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerStart.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerStart.java:27)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:65)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:69)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:629)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:604)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:58)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionCreateScope.scopeCreated(PvmAtomicOperationTransitionCreateScope.java:34)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationCreateScope.execute(PvmAtomicOperationCreateScope.java:50)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationCreateScope.execute(PvmAtomicOperationCreateScope.java:24)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:112)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.take(PvmExecutionImpl.java:742)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionDestroyScope.execute(PvmAtomicOperationTransitionDestroyScope.java:85)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionDestroyScope.execute(PvmAtomicOperationTransitionDestroyScope.java:33)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerEnd$1.callback(PvmAtomicOperationTransitionNotifyListenerEnd.java:42)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerEnd$1.callback(PvmAtomicOperationTransitionNotifyListenerEnd.java:37)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:1964)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1913)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerEnd.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerEnd.java:37)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationTransitionNotifyListenerEnd.eventNotificationsCompleted(PvmAtomicOperationTransitionNotifyListenerEnd.java:24)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:65)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:69)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:629)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:604)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:58)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:69)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:629)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperationSync(ExecutionEntity.java:604)
+	at org.camunda.bpm.engine.impl.core.operation.AbstractEventAtomicOperation.execute(AbstractEventAtomicOperation.java:58)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.leaveActivityViaTransitions(PvmExecutionImpl.java:1010)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.leaveActivityViaTransition(PvmExecutionImpl.java:953)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.BpmnActivityBehavior.performOutgoingBehavior(BpmnActivityBehavior.java:101)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.BpmnActivityBehavior.performDefaultOutgoingBehavior(BpmnActivityBehavior.java:52)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.FlowNodeActivityBehavior.doLeave(FlowNodeActivityBehavior.java:52)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.AbstractBpmnActivityBehavior.doLeave(AbstractBpmnActivityBehavior.java:71)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityLeave.execute(PvmAtomicOperationActivityLeave.java:52)
+	at org.camunda.bpm.engine.impl.pvm.runtime.operation.PvmAtomicOperationActivityLeave.execute(PvmAtomicOperationActivityLeave.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.AtomicOperationInvocation.execute(AtomicOperationInvocation.java:91)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.invokeNext(CommandInvocationContext.java:125)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performNext(CommandInvocationContext.java:104)
+	at org.camunda.bpm.engine.impl.interceptor.CommandInvocationContext.performOperation(CommandInvocationContext.java:79)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:618)
+	at org.camunda.bpm.engine.impl.persistence.entity.ExecutionEntity.performOperation(ExecutionEntity.java:594)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1897)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl$5.callback(PvmExecutionImpl.java:1894)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.continueExecutionIfNotCanceled(PvmExecutionImpl.java:1964)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1913)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.dispatchDelayedEventsAndPerformOperation(PvmExecutionImpl.java:1894)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.FlowNodeActivityBehavior.leave(FlowNodeActivityBehavior.java:48)
+	at org.camunda.bpm.engine.impl.bpmn.behavior.ReceiveTaskActivityBehavior.signal(ReceiveTaskActivityBehavior.java:36)
+	at org.camunda.bpm.engine.impl.pvm.runtime.PvmExecutionImpl.signal(PvmExecutionImpl.java:721)
+	at org.camunda.bpm.engine.impl.event.EventHandlerImpl.handleIntermediateEvent(EventHandlerImpl.java:54)
+	at org.camunda.bpm.engine.impl.event.EventHandlerImpl.handleEvent(EventHandlerImpl.java:69)
+	at org.camunda.bpm.engine.impl.persistence.entity.EventSubscriptionEntity.processEventSync(EventSubscriptionEntity.java:93)
+	at org.camunda.bpm.engine.impl.persistence.entity.EventSubscriptionEntity.eventReceived(EventSubscriptionEntity.java:86)
+	at org.camunda.bpm.engine.impl.cmd.MessageEventReceivedCmd.execute(MessageEventReceivedCmd.java:82)
+	at org.camunda.bpm.engine.impl.cmd.AbstractCorrelateMessageCmd.triggerExecution(AbstractCorrelateMessageCmd.java:54)
+	at org.camunda.bpm.engine.impl.cmd.AbstractCorrelateMessageCmd.createMessageCorrelationResult(AbstractCorrelateMessageCmd.java:86)
+	at org.camunda.bpm.engine.impl.cmd.CorrelateMessageCmd.execute(CorrelateMessageCmd.java:67)
+	at org.camunda.bpm.engine.impl.cmd.CorrelateMessageCmd.execute(CorrelateMessageCmd.java:36)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:24)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:104)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:42)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:40)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:66)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.camunda.bpm.engine.impl.MessageCorrelationBuilderImpl.execute(MessageCorrelationBuilderImpl.java:240)
+	at org.camunda.bpm.engine.impl.MessageCorrelationBuilderImpl.correlateWithResult(MessageCorrelationBuilderImpl.java:184)
+	at com.zhongan.flow.api.impl.FlowServiceImpl.lambda$notifyProcess$11(FlowServiceImpl.java:981)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$Lambda$82/1502692563.call(Unknown Source)
+	at com.zhongan.flow.api.impl.AbstractFlowService.executeWithAuth(AbstractFlowService.java:72)
+	at com.zhongan.flow.api.impl.FlowServiceImpl.notifyProcess(FlowServiceImpl.java:963)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$FastClassBySpringCGLIB$$d91ec059.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.zhongan.flow.api.log.AroundLogger.log(AroundLogger.java:31)
+	at sun.reflect.GeneratedMethodAccessor434.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:618)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at net.bull.javamelody.MonitoringSpringInterceptor.invoke(MonitoringSpringInterceptor.java:76)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$EnhancerBySpringCGLIB$$3ac07581.notifyProcess(<generated>)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$FastClassBySpringCGLIB$$d91ec059.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.zhongan.flow.api.impl.FlowServiceImpl$$EnhancerBySpringCGLIB$$ae83199f.notifyProcess(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:664)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1650)
+	at org.camunda.bpm.engine.rest.filter.CacheControlFilter.doFilter(CacheControlFilter.java:41)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.camunda.bpm.webapp.impl.security.filter.SecurityFilter.doFilterSecure(SecurityFilter.java:67)
+	at org.camunda.bpm.webapp.impl.security.filter.SecurityFilter.doFilter(SecurityFilter.java:51)
+	at org.camunda.bpm.spring.boot.starter.webapp.filter.LazyDelegateFilter.doFilter(LazyDelegateFilter.java:44)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at com.zhongan.flow.sso.filter.LoginFilter.doFilter(LoginFilter.java:37)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter$1.execute(AuthenticationFilter.java:58)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter$1.execute(AuthenticationFilter.java:56)
+	at org.camunda.bpm.webapp.impl.security.SecurityActions.runWithAuthentications(SecurityActions.java:40)
+	at org.camunda.bpm.webapp.impl.security.auth.AuthenticationFilter.doFilter(AuthenticationFilter.java:56)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1629)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:232)
+	at net.bull.javamelody.MonitoringFilter.doFilter(MonitoringFilter.java:209)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:165)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:199)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:673)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:591)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.camunda.bpm.engine.ProcessEngineException: Exception while invoking TaskListener: Biz logic suggest rollback
+	at org.camunda.bpm.engine.impl.task.listener.DelegateExpressionTaskListener.notify(DelegateExpressionTaskListener.java:60)
+	at org.camunda.bpm.engine.impl.task.delegate.TaskListenerInvocation.invoke(TaskListenerInvocation.java:41)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:54)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:87)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:59)
+	at org.camunda.bpm.engine.impl.persistence.entity.TaskEntity.fireEvent(TaskEntity.java:945)
+	... 271 common frames omitted
+Caused by: com.zhongan.flow.common.exception.RollbackException: Biz logic suggest rollback
+	at com.zhongan.flow.common.listener.AbstractGenericClaimTaskListener.notify(AbstractGenericClaimTaskListener.java:93)
+	at org.camunda.bpm.engine.impl.task.delegate.TaskListenerInvocation.invoke(TaskListenerInvocation.java:41)
+	at org.camunda.bpm.engine.impl.delegate.DelegateInvocation.proceed(DelegateInvocation.java:54)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocationInContext(DefaultDelegateInterceptor.java:87)
+	at org.camunda.bpm.engine.impl.delegate.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:59)
+	at org.camunda.bpm.engine.impl.task.listener.DelegateExpressionTaskListener.notify(DelegateExpressionTaskListener.java:56)
+	... 276 common frames omitted
+2022-04-20 16:18:56,976 [qtp1199742317-1129] INFO  [com.zhongan.flow.api.log.AroundLogger] - end public com.zhongan.flow.dto.FlowResult com.zhongan.flow.api.impl.FlowServiceImpl.notifyProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String):FlowResult [code=0, message=null, result=HaUwPolicy(id=1115002, uwSourceType=2, uwStatus=1, policySource=13, objectId=7009, objectNo=8P11010522130001282676|2P11010522130001141034, policyNo=8P11010522130001282676, applyDate=Wed Mar 02 15:41:21 GMT+08:00 2022, systemSource=IHYGEIA, validateTime=Wed Apr 20 16:18:55 GMT+08:00 2022, uwFinishTime=null, endorseType=8, remark=null, uwEscaUser=null, uwDecision=null, uwLevel=1, curAuditLevel=1, superAuthFlag=N, uwPolicyCategory=2, channelCategory=300, primaryPartnerId=null, primaryPartnerFullName=null, secondPartnerId=5, secondPartnerFullName=中元经纪公司, businessOrgCode=1101050000, isNeedReinsurance=N, holderId=545008, holderName=changed, holderCertType=null, holderCertNo=null, endorseName=陈思思, isLocked=N, lockedId=N/A, lockedName=null, lockedTime=null, channelTradeNo=635a7bb608500505be9699c38231a617-1, bdSalesmanId=1101050000003, bdSalesmanName=金庆玲, operatorId=N/A, operatorOrgCode=null, operatorName=N/A, extraInfo={"departmentType":2}, isDeleted=null, uwReturnReasonType=null, channelCode=null), resultType=class com.zhongan.open.minos.share.domain.HaUwPolicy]
