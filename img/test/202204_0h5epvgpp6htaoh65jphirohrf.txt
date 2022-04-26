@@ -1,0 +1,78 @@
+251179/caseHuangUpSaveTemp
+251
+            if (StringUtils.equals(ClaimCaseNoteTypeEnum.CASEHANGUP.getCode(), caseNoteDTO.getType())
+                    && StringUtils.equals(CaseHangUpEnum.CASEUPLARGEFILTER.getCaseUpCode(), caseNoteDTO.getReason())){
+                caseNoteDTO.setNoteResult(caseNote.getNoteResult());
+            }
+
+
+caseHuangUpQueryApplied
+179
+                if (StringUtils.equals(CaseHangUpEnum.CASEUPLARGEFILTER.getCaseUpCode(),
+                        claimCaseNote.getReason())){
+                    caseHuangUpVO.setNoteResult(claimCaseNote.getNoteResult());
+                }
+
+
+viewCaseHuangUp
+620
+HaClaimCaseNoteDTO queryCon2 = new HaClaimCaseNoteDTO();
+            queryCon2.setType("caseHang");
+            queryCon2.setReportNo(caseNote.getReportNo());
+            queryCon2.setReason(CaseHangUpEnum.CASEUPLARGEFILTER.getCaseUpCode());
+            queryCon2.setUpStatus(CaseHuangUpStatusEnum.TEMP.getHuangUpStatusCode());
+            queryCon2.setIsDeleted(YesOrNoEnum.NO.getCode());
+            List<HaClaimCaseNoteDTO> noteDTOS = haClaimCaseNoteService.selectListHaClaimCaseNoteDTO(queryCon2);
+            if (CollectionUtils.isEmpty(haClaimCaseNoteDTOs)) {
+                if (CollectionUtils.isNotEmpty(noteDTOS)) {
+                    caseHuangUpVO.setNoteResult(noteDTOS.get(0).getNoteResult());
+                }
+                result.setSuccess(caseHuangUpVO);
+                return result;
+            }
+
+675
+            if (StringUtils.equals(CaseHangUpEnum.CASEUPLARGEFILTER.getCaseUpCode(), claimCaseNote.getReason())) {
+                caseHuangUpVO.setNoteResult(null);
+                if (CollectionUtils.isNotEmpty(noteDTOS)) {
+                    if (StringUtils.equals(CaseHuangUpStatusEnum.TEMP.getHuangUpStatusCode(), noteDTOS.get(0).getUpStatus())){
+                        caseHuangUpVO.setNoteResult(noteDTOS.get(0).getNoteResult());
+                    }
+                }
+            }
+
+
+839
+else if (StringUtils.equals(CaseHangUpEnum.CASEUPLARGEFILTER.getCaseUpCode(), caseNoteDTO.getReason())){
+                messageUtils.sendMsg(caseNoteDTO.getReportNo(),SMSEnum.SUPPLEMENTARY.name());
+            }
+
+2900
+        if (StringUtils.equals(CaseHangUpEnum.CASEUPLARGEFILTER.getCaseUpCode(), caseNoteDTO.getReason())) {
+            wxTemplateMessageDto.setName("xdbx-zs");
+            wxTemplateMessageDto.setTemplateType("TM00692");
+            wxTemplateMessageDto.setCellphone(haClaimApplication.getMobileNo());
+            wxTemplateMessageDto.setData(com.google.common.collect.Lists.newArrayList(
+                    new WxMpTemplateData("title","补充理赔材料通知"),
+                    new WxMpTemplateData("first","尊敬的客户，您提交的理赔申请已通过初步审核，由于案件超过线上结案限额，请您根据以下链接中的引导方式寄送原件。"),
+                    new WxMpTemplateData("date", DateUtils.formatDateYYYY_MM_DD_HH_MM_SS(haClaimApplication.getReportedDate())),
+                    new WxMpTemplateData("name",policy.getInsurantName()),
+                    new WxMpTemplateData("status",ClaimCaseNoteTypeEnum.CASEHANGUP.getTypeName()),
+                    new WxMpTemplateData("remark","我司会在收到您的理赔原件材料后处理您的理赔案件，点击查看具体详情。\n" +
+                            "如有疑问，请拨打全国服务热线电话：400-608-0808。")));
+            wxTemplateMessageDto.setUrl(onlineUrl + caseNoteDTO.getReportNo());
+        }else {
+            wxTemplateMessageDto.setName("xdbx-zs");
+            wxTemplateMessageDto.setTemplateType("2006");
+            wxTemplateMessageDto.setCellphone(haClaimApplication.getMobileNo());
+            wxTemplateMessageDto.setData(com.google.common.collect.Lists.newArrayList(
+                    new WxMpTemplateData("first", "尊敬的客户，您提交的理赔资料有误。"),
+                    new WxMpTemplateData("date", DateUtils.formatDateYYYY_MM_DD_HH_MM_SS(haClaimApplication.getReportedDate())),
+                    new WxMpTemplateData("name", policy.getInsurantName()),
+                    new WxMpTemplateData("status", "审核中（资料待补充）"),
+                    new WxMpTemplateData("remark", "缺少材料：" + missingMaterials + "，为避免影响您的理赔时效，请尽快进行修改，重新上传。如有疑问，请拨打全国服务热线电话：400-608-0808。点击补充材料>>")));
+            wxTemplateMessageDto.setUrl(onlineUrl + caseNoteDTO.getReportNo());
+        }
+
+
+
